@@ -18,7 +18,7 @@ const SiteMetaData = ({ title, description, author, image, keywords }) => {
   const { pathname } = useRouter();
 
   const metaDescription = description || siteDescription;
-  const metaTitle = title || `${title} | ${siteTitle}`;
+  const metaTitle = title || `${siteTitle}`;
   const metaAuthor = author || siteAuthor;
   const metaUrl = `${siteUrl}${pathname}` || siteUrl;
   const coverImage = image || defaultCoverImage;
